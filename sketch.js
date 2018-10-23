@@ -53,7 +53,7 @@ function draw() {
   image(hand, 260 + volume, height / 2, 120, 175);
   image(stick, 77, height / 2 + 125 + volume, 248, 181);
   // ifs cycles
-  if (frameCount > 100 && frameCount < 730 || frameCount > 750) {
+  if (frameCount > 100 && frameCount < 730 || frameCount > 760) {
     if (volume > 4) {
       x = x + 14;
       i++;
