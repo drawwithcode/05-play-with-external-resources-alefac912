@@ -50,8 +50,8 @@ function draw() {
   // volume mapping
   var volume = beat.getLevel();
   volume = map(volume, 0, 1, 0, 100);
-  image(hand, 260 + (volume * 1.5), height / 2, 120, 175);
-  image(stick, 75, height / 2 + 125 + (volume * 1.5), 248, 181);
+  image(hand, 260 + volume, height / 2, 120, 175);
+  image(stick, 77, height / 2 + 125 + volume, 248, 181);
   // ifs cycles
   if (frameCount > 100 && frameCount < 730 || frameCount > 750) {
     if (volume > 4) {
